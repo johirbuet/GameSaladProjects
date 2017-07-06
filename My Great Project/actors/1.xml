@@ -18,142 +18,219 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image" />
+    <image id="image">ufo01</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id411826" class="RuleBehavior" enabled="true">
+    <behavior id="id922325" class="CompoundBehavior" enabled="true">
       <attributes>
-        <text id="name">Go Right</text>
+        <text id="name">Group . Player Control</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id779828" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Down</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id665731" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">down</text>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id694511" class="MoveBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move</text>
+                <text id="bundleName">Move.behavior</text>
+                <angle id="direction">270</angle>
+                <index id="space">0</index>
+                <index id="moveType">0</index>
+                <real id="speed">300</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id917202" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Go Up</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id494593" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">up</text>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id550316" class="MoveBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move</text>
+                <text id="bundleName">Move.behavior</text>
+                <angle id="direction">90</angle>
+                <index id="space">0</index>
+                <index id="moveType">0</index>
+                <real id="speed">300</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id411826" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Go Right</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id658202" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">right</text>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id197925" class="MoveBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move</text>
+                <text id="bundleName">Move.behavior</text>
+                <angle id="direction">0</angle>
+                <index id="space">0</index>
+                <index id="moveType">0</index>
+                <real id="speed">300</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id580382" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Go Left</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id151744" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">left</text>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id468843" class="MoveBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move</text>
+                <text id="bundleName">Move.behavior</text>
+                <angle id="direction">180</angle>
+                <index id="space">0</index>
+                <index id="moveType">0</index>
+                <real id="speed">300</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id761305" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Death</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
       <conditions>
-        <condition id="id658202" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+        <condition id="id810128" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
           <attributes>
             <text id="name">default name</text>
             <index id="conditionType">0</index>
           </attributes>
-          <predicate type="key">
+          <predicate type="collision">
             <attributes>
-              <text id="mode">down</text>
-              <text id="keyString">right</text>
+              <text id="prototypeKey">id214235</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
             </attributes>
           </predicate>
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id197925" class="MoveBehavior" enabled="true">
+        <behavior id="id898656" class="PlaySoundAction" enabled="true">
           <attributes>
-            <text id="name">Move</text>
-            <text id="bundleName">Move.behavior</text>
+            <text id="name">Play Sound</text>
+            <text id="bundleName">PlaySound.behavior</text>
+            <sound id="soundName">playerdeath</sound>
+            <boolean id="loop">false</boolean>
+            <boolean id="runToCompletion">true</boolean>
+            <boolean id="positional">false</boolean>
+            <boolean id="dopplerShift">false</boolean>
+            <real id="volume">1.08988764044943</real>
+            <real id="pitch">1</real>
+          </attributes>
+        </behavior>
+        <behavior id="id561158" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id111742</text>
             <angle id="direction">0</angle>
-            <index id="space">0</index>
-            <index id="moveType">0</index>
-            <real id="speed">300</real>
+            <index id="directionSpace">0</index>
+            <real id="x">0</real>
+            <real id="y">0</real>
+            <index id="positionSpace">0</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id210090" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
           </attributes>
         </behavior>
       </behaviors>
     </behavior>
-    <behavior id="id580382" class="RuleBehavior" enabled="true">
+    <behavior id="id818751" class="AnimateBehavior" enabled="true">
       <attributes>
-        <text id="name">Go Left</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
+        <text id="name">Animate</text>
+        <text id="bundleName">Animate.behavior</text>
+        <text id="images">ufo01	ufo02</text>
+        <index id="speed">2</index>
+        <boolean id="loop">true</boolean>
+        <boolean id="restoreActorImage">true</boolean>
+        <text id="currentFrameAttribute" />
       </attributes>
-      <conditions>
-        <condition id="id151744" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-          <attributes>
-            <text id="name">default name</text>
-            <index id="conditionType">0</index>
-          </attributes>
-          <predicate type="key">
-            <attributes>
-              <text id="mode">down</text>
-              <text id="keyString">left</text>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id468843" class="MoveBehavior" enabled="true">
-          <attributes>
-            <text id="name">Move</text>
-            <text id="bundleName">Move.behavior</text>
-            <angle id="direction">180</angle>
-            <index id="space">0</index>
-            <index id="moveType">0</index>
-            <real id="speed">300</real>
-          </attributes>
-        </behavior>
-      </behaviors>
-    </behavior>
-    <behavior id="id917202" class="RuleBehavior" enabled="true">
-      <attributes>
-        <text id="name">Go Up</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
-      </attributes>
-      <conditions>
-        <condition id="id494593" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-          <attributes>
-            <text id="name">default name</text>
-            <index id="conditionType">0</index>
-          </attributes>
-          <predicate type="key">
-            <attributes>
-              <text id="mode">down</text>
-              <text id="keyString">up</text>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id550316" class="MoveBehavior" enabled="true">
-          <attributes>
-            <text id="name">Move</text>
-            <text id="bundleName">Move.behavior</text>
-            <angle id="direction">90</angle>
-            <index id="space">0</index>
-            <index id="moveType">0</index>
-            <real id="speed">300</real>
-          </attributes>
-        </behavior>
-      </behaviors>
-    </behavior>
-    <behavior id="id779828" class="RuleBehavior" enabled="true">
-      <attributes>
-        <text id="name">Down</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
-      </attributes>
-      <conditions>
-        <condition id="id665731" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-          <attributes>
-            <text id="name">default name</text>
-            <index id="conditionType">0</index>
-          </attributes>
-          <predicate type="key">
-            <attributes>
-              <text id="mode">down</text>
-              <text id="keyString">down</text>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id694511" class="MoveBehavior" enabled="true">
-          <attributes>
-            <text id="name">Move</text>
-            <text id="bundleName">Move.behavior</text>
-            <angle id="direction">270</angle>
-            <index id="space">0</index>
-            <index id="moveType">0</index>
-            <real id="speed">300</real>
-          </attributes>
-        </behavior>
-      </behaviors>
     </behavior>
   </behaviors>
   <aspects>

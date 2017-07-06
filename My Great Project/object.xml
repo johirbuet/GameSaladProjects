@@ -8,10 +8,16 @@
   <prototypes>
     <actor id="id854947" />
     <actor id="id214235" />
+    <actor id="id334013" />
+    <actor id="id477402" />
+    <actor id="id708563" />
+    <actor id="id820339" />
+    <actor id="id111742" />
   </prototypes>
   <plugins />
   <scenes>
     <scene id="id663293" />
+    <scene id="id731966" />
   </scenes>
   <attributes>
     <text id="name">default name</text>
@@ -173,5 +179,6 @@
       <text id="name" />
     </adreward>
     <table id="id208047" name="PurchaseTable">PurchaseTable</table>
+    <integer id="id659069" name="JamCount">0</integer>
   </attributes>
 </game>

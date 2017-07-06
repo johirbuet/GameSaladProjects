@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id214235" PGFVersion="0.25" GSCVersion="1.25.6227">
+<actor id="id111742" PGFVersion="0.25" GSCVersion="1.25.6227">
   <attributes>
-    <text id="name">lava</text>
+    <text id="name">explosion</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -18,20 +18,34 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">lava</image>
+    <image id="image">explosion</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id666733" class="AnimateBehavior" enabled="true">
+    <behavior id="id581597" class="TimerBehavior" enabled="true">
       <attributes>
-        <text id="name">Animate</text>
-        <text id="bundleName">Animate.behavior</text>
-        <text id="images">lava	lava02</text>
-        <index id="speed">5</index>
-        <boolean id="loop">true</boolean>
-        <boolean id="restoreActorImage">true</boolean>
-        <text id="currentFrameAttribute" />
+        <text id="name">Timer</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">1</index>
+        <real id="interval">1</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id230861" class="ResetSceneAction" enabled="true">
+          <attributes>
+            <text id="name">Reset Scene</text>
+            <text id="bundleName">ResetScene.behavior</text>
+            <index id="enableAdvertisement">0</index>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id352660" class="GrowShrinkBehavior" enabled="true">
+      <attributes>
+        <text id="name">Change Size</text>
+        <text id="bundleName">ChangeSize.behavior</text>
+        <real id="growthRate">-5</real>
       </attributes>
     </behavior>
   </behaviors>
@@ -40,14 +54,12 @@
       <attributes>
         <boolean id="visible">true</boolean>
         <enumeration id="blendingMode">0</enumeration>
-        <enumeration id="horizontalWrap">2</enumeration>
-        <enumeration id="verticalWrap">2</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
         <enumeration id="horizontalAnchor">0</enumeration>
         <enumeration id="verticalAnchor">0</enumeration>
         <boolean id="flipHorizontally">false</boolean>
         <boolean id="flipVertically">false</boolean>
-        <integer id="tileWidth">50</integer>
-        <integer id="tileHeight">50</integer>
       </attributes>
     </graphics>
     <motion>
