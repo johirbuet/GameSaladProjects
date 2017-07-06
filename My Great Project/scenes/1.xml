@@ -17,6 +17,62 @@
           </attributes>
           <aspects />
         </actor>
+        <actor id="id605047" prototype="id214235">
+          <attributes>
+            <point id="position">
+              <real id="x">283</real>
+              <real id="y">329</real>
+            </point>
+            <size id="size">
+              <real id="width">571.2</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id779782" prototype="id214235">
+          <attributes>
+            <point id="position">
+              <real id="x">-8</real>
+              <real id="y">138</real>
+            </point>
+            <size id="size">
+              <real id="width">120</real>
+              <real id="height">289.6</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id507328" prototype="id214235">
+          <attributes>
+            <point id="position">
+              <real id="x">291</real>
+              <real id="y">-25</real>
+            </point>
+            <size id="size">
+              <real id="width">589.6</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id890561" prototype="id214235">
+          <attributes>
+            <point id="position">
+              <real id="x">579</real>
+              <real id="y">168</real>
+            </point>
+            <size id="size">
+              <real id="width">120</real>
+              <real id="height">314.4</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
       </actors>
       <attributes>
         <text id="name">Background</text>
